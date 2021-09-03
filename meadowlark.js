@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.type('text/pain')
+    res.type('text/plain')
     res.send('About Meadowlark Travel')
 })
 

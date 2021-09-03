@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000
 app.use((req, res) => {
     res.type('text/plain')
     res.status(500)
-    res.send('500 - Server Error')
+    res.send('404 - Not Found')
 })
 
 // custom 500 page

@@ -3,3 +3,9 @@ node_modules
 
 # Ignore .vscode
 .vscode
+
+# logs
+*.logs
+
+# npm
+.npm

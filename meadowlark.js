@@ -5,6 +5,13 @@ const app = express()
 
 const port = process.env.PORT || 3000
 
+// Configure handlebars to vie engine
+app.engine('handlebars', expressHandlebars({
+    defaultLayout: 'main',
+}))
+
+app.set('view engine', 'handlebars')
+
 app.get('/', (req, res) => {
     res.type('text/plain')
     res.send('Meadowlark Travel')
